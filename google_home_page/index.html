@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    
+    <head> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            body {background-color: white;}
+            .logo {
+                margin-top: 100px;
+                display: flex;
+                justify-content: center;
+                }
+            .buttons {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                height: 40px;
+            }
+            .buttoncolor {
+                background-color: rgb(243, 242, 242);
+                border-radius: 4px;
+                height: 45px;
+                width: 160px;
+                font-size: 14px;
+                border: none;
+            }
+            .buttoncolor:hover {
+                border: 1px solid grey;
+            }
+            .languages {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 15px;
+                font-size: 15px;
+            }
+            #searchbar{
+                display:flex;
+                justify-content: center;
+                position:relative;
+                margin-top: 28px;
+            }
+           .search-icon{
+                position: relative;
+                margin-top: 10px;
+                left: 35px;
+            }
+           .mic-icon{
+                position: relative;
+                margin-top: 10px;
+                right: 40px;
+            }
+            .rcorners{
+                border-radius: 25px;
+                line-height: 38px;
+                padding-left: 40px;
+                outline: none;
+                border: 1px solid grey;
+            }
+            .rcorners:hover {
+                box-shadow: 3px 3px  grey;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: white;
+            }
+            li {
+                float:left;
+            }
+            li a{
+                display: block;
+                color: Grey;
+                text-align: center;
+                margin-top: 10px;
+                padding: 0px 15px;
+                text-decoration: none;
+                }
+            li:hover {
+                text-decoration: underline;
+            }
+            .btn-signin {
+                background-color: rgb(15, 111, 255);
+                color: white;
+                margin-top: -10px;
+                height: 30px;
+                width: 80px;
+            }
+            .apps {
+                margin-top: -2px;
+            }
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color:rgb(231, 226, 226);
+                height: 40px;
+            }
+            .footer a{
+                color:rgb(73, 71, 71);
+            }
+        </style>
+        
+        <body>
+            <ul>
+                <li><a href="default.asp">About</a></li>
+                <li><a href="news.asp">Store</a></li>
+                <li style="float:right"><a href="news.asp"><button class="btn-signin"> Sign in</button></a></li>
+                <li style="float:right; display:block"><a href="default.asp"><i class="material-icons apps">apps</i></a></li>
+                <li style="float:right"><a href="news.asp">Menu</a></li>
+                <li style="float:right"><a href="news.asp">Images</a></li>
+            </ul>
+
+            <div class="logo">
+                <img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png />
+            </div>
+            <div id="searchbar">
+                <i class="material-icons search-icon">search</i>
+                <input class="rcorners" type='text' size="90"> 
+                <i class="material-icons mic-icon">mic</i>
+            </div>          
+
+
+            <div class="buttons">
+                <button class="buttoncolor">Google Search</button> &nbsp &nbsp;
+                <button class="buttoncolor">I'm Feeling Lucky</button>
+            </div>
+            <div class='languages'>
+                <p>Google Offered in:</p> &nbsp <a href=" ">中文（繁體)</a>  &nbsp   <a href=" ">中文(简体)</a>
+            </div>
+
+            <ul class="footer">
+                <li><a href="default.asp">Advertising</a></li>
+                <li><a href="news.asp">Business</a></li>
+                <li><a href="news.asp">How Search Works</a></li>
+                <li style="float:right"><a href="news.asp">Settings</a></li>
+                <li style="float:right"><a href="news.asp">Terms</a></li>
+                <li style="float:right"><a href="news.asp">Privacy</a></li>
+            </ul>
+
+
+
+        </body>
+    </head>
+</html>
+
+
+
+
