@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add Books To My Library</title>
+</head>
+<style>
+  .button-center {
+  margin:auto;
+  display:block;
+  }
+</style>
+<body>
+
+<form name="addNewBook" action="#">
+    <label>Book Name</label>
+  <input id='getBook' name="bookName" type="text">
+  <label>Author Name</label>
+  <input id='getAuthor' name="author" type="text">
+  <label>Pages</label>
+  <input id='getPages' name="pages" type="number">
+  <label>Read?</label>
+  <input type='checkbox' id="read">
+
+  <button type="button" onClick="addBook()">Add Book</button>
+</form>
+
+<div>
+    <h1 id="display">My Library</h1>
+    <table id="table" style="width:50%">
+        <tr>
+          <th>Book Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Button</th>
+        </tr>
+      </table>
+</div>
+
+<script src="script.js"> </script>
+</body>
+</html>
