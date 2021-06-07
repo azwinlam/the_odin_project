@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>TicTacToe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-tac-toe</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    </head>
+
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        p {
+            display:flex;
+            justify-content: center;
+        }
+
+        .gameboard {
+            display: flex;
+            justify-content: center;
+            margin: 100px 100px 50px;
+        }
+        .squares {
+            display: grid;
+            grid-template-columns: repeat(3,150px);
+            grid-template-rows: repeat(3,150px);
+            background-color: lightblue;
+
+            justify-content: center;
+        }
+
+        .square{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .square:hover{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: yellow;
+        }
+
+        /* player markers */
+        .X{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--accent-red);
+            color: var(--red);
+        }
+        .O{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--accent-yellow);
+            color: yellow;
+        }
+        .X::after{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: '\f004';
+            color: red;
+        }
+        .O::after{
+            content: '\f0e7';
+            color: var(--dark-yellow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .X::after, .O::after{
+            font-family: 'Font Awesome 5 Free';
+            font-size: 6rem;
+            font-weight: 900;
+            font-size: 6rem;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+
+
+    </style>
+
+    <body>
+        <div>
+            <h1>Tic Tac Toe</h1>
+            <p class="subtext">Player&nbsp<span class="whosTurn">1</span>, it is your turn!</p>
+        </div>
+        <main class="gameboard">
+            <div class="squares"></div>
+        </main>
+
+        <div class="center">
+            <button class='test'>Play Again</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
